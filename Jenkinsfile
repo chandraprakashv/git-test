@@ -36,6 +36,7 @@ pipeline {
 					reuseNode false
 					image 'ubuntu'
 					args '-u root:root'
+					sh systemctl start docker
                                         }
 			}
 				steps {
