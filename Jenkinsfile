@@ -33,9 +33,9 @@ pipeline {
                         stage('Integration test') {
                         agent {
                                 docker {
-					sudo chmod 666 /var/run/docker.sock
-                                        reuseNode false
+					reuseNode false
 					image 'ubuntu'
+					args '-u root:root'
                                         }
 			}
 				steps {
