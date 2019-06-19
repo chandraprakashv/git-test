@@ -39,7 +39,6 @@ pipeline {
 					}
 			}
 				steps {
-					sh systemctl start docker
 					echo 'Running the integration test..'
 				}
                                
